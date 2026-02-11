@@ -1,0 +1,27 @@
+name: WebViewNativeiOS
+options:
+  deploymentTarget:
+    iOS: "16.0"
+configs:
+  Debug: debug
+  Release: release
+settings:
+  base:
+    PRODUCT_BUNDLE_IDENTIFIER: dev.curogom.test.webview.ios
+    SWIFT_VERSION: 5.9
+targets:
+  WebViewNativeiOS:
+    type: application
+    platform: iOS
+    sources:
+      - path: WebViewNativeiOS
+    settings:
+      base:
+        INFOPLIST_FILE: WebViewNativeiOS/Info.plist
+        PRODUCT_BUNDLE_IDENTIFIER: dev.curogom.test.webview.ios
+        PRODUCT_NAME: WebViewNativeiOS
+        CODE_SIGN_STYLE: Automatic
+        DEVELOPMENT_TEAM: ""
+    scheme:
+      testTargets: []
+      gatherCoverageData: false

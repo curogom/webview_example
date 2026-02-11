@@ -1,0 +1,62 @@
+{
+  "expo": {
+    "name": "rn-expo",
+    "slug": "rn-expo",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "scheme": "wvrn",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "dev.curogom.test.webview.rn.ios",
+      "infoPlist": {
+        "LSApplicationQueriesSchemes": [
+          "kakaotalk",
+          "ispmobile",
+          "kb-acp",
+          "supertoss"
+        ]
+      }
+    },
+    "android": {
+      "package": "dev.curogom.test.webview.rn.android",
+      "intentFilters": [
+        {
+          "action": "VIEW",
+          "autoVerify": false,
+          "data": [
+            {
+              "scheme": "myapp",
+              "host": "pay",
+              "path": "/return"
+            },
+            {
+              "scheme": "wvrn",
+              "host": "pay",
+              "path": "/return"
+            }
+          ],
+          "category": [
+            "BROWSABLE",
+            "DEFAULT"
+          ]
+        }
+      ],
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "edgeToEdgeEnabled": true
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}
